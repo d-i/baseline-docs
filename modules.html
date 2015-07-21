@@ -8,23 +8,25 @@ section: modules
 <div class="doc-section">
   <h2 class="secondary-headline doc-headline">Buttons</h2>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <span class="button mbl">Standard Button</span>
     <span class="button button--full">Full Width Button</span>
   </div>
 
-<pre><code class="language-markup">&lt;span class="button"&gt;Standard Button&lt;/span&gt;
-&lt;span class="button button--full"&gt;Full Width Button&lt;/span&gt;
-</code></pre>
+{% highlight html %}
+<span class="button">Standard Button</span>
+<span class="button button--full">Full Width Button</span>
+{% endhighlight %}
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <span class="button">Standard Button</span>
     <span class="button-pseudo">Pseudo Button</span>
   </div>
 
-<pre><code class="language-markup">&lt;span class="button"&gt;Standard Button&lt;/span&gt;
-&lt;span class="button-pseudo"&gt;Pseudo Button&lt;/span&gt;
-</code></pre>
+{% highlight html %}
+<span class="button">Standard Button</span>
+<span class="button-pseudo">Pseudo Button</span>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
@@ -33,7 +35,7 @@ section: modules
 
   <h3 class="tertiary-headline">16x9 Aspect Ratio</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="embed embed--16by9">
       <div class="embed__item">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-9NMt42il4Q" frameborder="0" allowfullscreen></iframe>
@@ -41,16 +43,17 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="embed embed--16by9"&gt;
-  &lt;div class="embed__item"&gt;
+{% highlight html %}
+<div class="embed embed--16by9">
+  <div class="embed__item">
     ...
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+  </div>
+</div>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">4x3 Aspect Ratio</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="embed embed--4by3">
       <div class="embed__item">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-9NMt42il4Q" frameborder="0" allowfullscreen></iframe>
@@ -58,12 +61,14 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="embed embed--4by3"&gt;
-  &lt;div class="embed__item"&gt;
+
+{% highlight html %}
+<div class="embed embed--4by3">
+  <div class="embed__item">
     ...
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+  </div>
+</div>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
@@ -71,7 +76,7 @@ section: modules
 
   <h3 class="tertiary-headline">Horizontal Form</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="form-horizontal">
       <label for="test-form-1">Name</label>
       <input type="text" name="test-form-1" id="test-form-1">
@@ -85,14 +90,15 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="form-horizontal"&gt;
+{% highlight html %}
+<div class="form-horizontal">
   ...
-&lt;/div&gt;
-</code></pre>
+</div>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">Vertical Form</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="form-vertical">
       <label for="test-form-1">Name</label>
       <input type="text" name="test-form-1" id="test-form-1">
@@ -106,10 +112,11 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="form-vertical"&gt;
+{% highlight html %}
+<div class="form-vertical">
   ...
-&lt;/div&gt;
-</code></pre>
+</div>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
@@ -117,7 +124,7 @@ section: modules
 
   <h3 class="tertiary-headline">Plain List</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <ul class="list-plain mbn">
       <li>Item 1</li>
       <li>Item 2</li>
@@ -125,16 +132,17 @@ section: modules
     </ul>
   </div>
 
-<pre><code class="language-markup">&lt;ul class="list-plain"&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+{% highlight html %}
+<ul class="list-plain">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">Horizontal List</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <ul class="list-horizontal mbn">
       <li>Item 1</li>
       <li>Item 2</li>
@@ -142,12 +150,13 @@ section: modules
     </ul>
   </div>
 
-<pre><code class="language-markup">&lt;ul class="list-horizontal"&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+{% highlight html %}
+<ul class="list-horizontal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
@@ -155,7 +164,7 @@ section: modules
 
   <h3 class="tertiary-headline">Standard Media Object</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="media">
       <div class="media__obj">
         <img src="http://placehold.it/50x50" alt="">
@@ -166,15 +175,16 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="media"&gt;
-  &lt;div class="media__obj"&gt;&lt;img src="..." alt=""&gt;&lt;/div&gt;
-  &lt;div class="media__body"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+{% highlight html %}
+<div class="media">
+  <div class="media__obj"><img src="..." alt=""></div>
+  <div class="media__body">...</div>
+</div>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">Reversed Media Object</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="media">
       <div class="media__obj--rev">
         <img src="http://placehold.it/50x50" alt="">
@@ -185,17 +195,18 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="media"&gt;
-  &lt;div class="media__obj--rev"&gt;&lt;img src="..." alt=""&gt;&lt;/div&gt;
-  &lt;div class="media__body"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+{% highlight html %}
+<div class="media">
+  <div class="media__obj--rev"><img src="..." alt=""></div>
+  <div class="media__body">...</div>
+</div>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
   <h2 class="secondary-headline doc-headline">Notifications</h2>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <div class="notification">
       Default Notification
     </div>
@@ -217,12 +228,13 @@ section: modules
     </div>
   </div>
 
-<pre><code class="language-markup">&lt;div class="notification"&gt;...&lt;/div&gt;
-&lt;div class="notification notification--alert"&gt;...&lt;/div&gt;
-&lt;div class="notification notification--warning"&gt;...&lt;/div&gt;
-&lt;div class="notification notification--success"&gt;...&lt;/div&gt;
-&lt;div class="notification notification--notice"&gt;...&lt;/div&gt;
-</code></pre>
+{% highlight html %}
+<div class="notification">...</div>
+<div class="notification notification--alert">...</div>
+<div class="notification notification--warning">...</div>
+<div class="notification notification--success">...</div>
+<div class="notification notification--notice">...</div>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
@@ -230,7 +242,7 @@ section: modules
 
   <h3 class="tertiary-headline">Standard Table</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <table class="table">
       <thead>
         <tr>
@@ -259,14 +271,15 @@ section: modules
     </table>
   </div>
 
-<pre><code class="language-markup">&lt;table class="table"&gt;
+{% highlight html %}
+<table class="table">
   ...
-&lt;/table&gt;
-</code></pre>
+</table>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">Striped Table</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <table class="table table--striped">
       <thead>
         <tr>
@@ -295,14 +308,15 @@ section: modules
     </table>
   </div>
 
-<pre><code class="language-markup">&lt;table class="table table--striped"&gt;
+{% highlight html %}
+<table class="table table--striped">
   ...
-&lt;/table&gt;
-</code></pre>
+</table>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">Hover Table</h3>
 
-  <div class="highlight highlight--flush">
+  <div class="example">
     <table class="table table--hover">
       <thead>
         <tr>
@@ -331,8 +345,9 @@ section: modules
     </table>
   </div>
 
-<pre><code class="language-markup">&lt;table class="table table--hover"&gt;
+{% highlight html %}
+<table class="table table--hover">
   ...
-&lt;/table&gt;
-</code></pre>
+</table>
+{% endhighlight %}
 </div>

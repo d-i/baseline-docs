@@ -14,7 +14,7 @@ section: code
 
   <p><strong>Base</strong> styles are the foundation of the site. In this directory you will find the following:</p>
    
-  <div class="highlight">
+  <div class="example">
     <table class="table table--demo">
       <tbody>
         <tr>
@@ -45,7 +45,7 @@ section: code
 
   <p>The layout styles are just that, they determine how main sections of the page are structured. Within this directory there are:</p>
 
-  <div class="highlight">
+  <div class="example">
     <table class="table--demo">
       <tbody>
         <tr>
@@ -91,41 +91,45 @@ section: code
   <p>If there are any modifications to the original widget such as a lighter background color, you can add a modifier to the root class which uses two dashes to signify its relationship: <code class="code">widget--light</code>.</p>
   <p>An example in <code class="code">CSS</code> and <code class="code">SCSS</code> <strong>(Sass 3.2.15 and below)</strong>:</p>
 
-<pre><code class="language-scss">.widget { ... }
+{% highlight scss %}
+.widget { ... }
 
 .widget__title { ... }
 
 .widget__body { ... }
 
 .widget--light { ... }
-</code></pre>
+{% endhighlight %}
 
   <p>An example in <code class="code">SCSS</code> <strong>(Sass 3.3 and above)</strong>:</p>
 
-<pre><code class="language-scss">.widget {
-  &amp;__title { ... }
+{% highlight scss %}
+.widget {
+  &__title { ... }
 
-  &amp;__body { ... }
+  &__body { ... }
 
-  &amp;--light { ... }
+  &--light { ... }
 }
-</code></pre>
+{% endhighlight %}
 
   <p>The resulting <code class="code">HTML</code> would look like this:</p>
 
-<pre><code class="language-markup">&lt;div class="widget"&gt;
-  &lt;p class="widget__title"&gt;...&lt;/p&gt;
-  &lt;p class="widget__body"&gt;...&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
+{% highlight html %}
+<div class="widget">
+  <p class="widget__title">...</p>
+  <p class="widget__body">...</p>
+</div>
+{% endhighlight %}
 
   <p>And with the modifier:</p>
 
-<pre><code class="language-markup">&lt;div class="widget widget--light"&gt;
-  &lt;p class="widget__title"&gt;...&lt;/p&gt;
-  &lt;p class="widget__body"&gt;...&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
+{% highlight html %}
+<div class="widget widget--light">
+  <p class="widget__title">...</p>
+  <p class="widget__body">...</p>
+</div>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
@@ -146,12 +150,13 @@ section: code
 
   <p>Here is good example syntax:</p>
 
-<pre><code class="language-css">.styleguide-format {
+{% highlight css %}
+.styleguide-format {
   border: 1px solid #0f0;
   color: #000;
   background: rgba(0,0,0,0.5);
 }
-</code></pre>
+{% endhighlight %}
 
   <h3 class="tertiary-headline">SCSS Style</h3>
 
@@ -163,7 +168,8 @@ section: code
 
   <p>Here is an example:</p>
 
-<pre><code class="language-scss">.widget {
+{% highlight scss %}
+.widget {
   @include clearfix;
   @extend .component; 
   border: 1px solid $border-color;
@@ -172,10 +178,10 @@ section: code
   a {
     color: $widget-link-color;
 
-    &amp;:hover {
+    &:hover {
       color: darken($widget-link-color, 10%);
     }
   }
 }
-</code></pre>
+{% endhighlight %}
 </div>

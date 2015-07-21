@@ -3,6 +3,11 @@
 
 $default-bg-color: #f5f2f0;
 
+code, kbd, pre, samp {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: rem(14);
+}
+
 a {
   color: #218aa3;
 
@@ -41,8 +46,7 @@ blockquote {
 
 .code {
   padding: 2px 5px;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  color: #905;
+  color: #d14;
   background-color: $default-bg-color;
   border: 1px solid $default-border-color;
   border-radius: 2px;
@@ -101,7 +105,7 @@ blockquote {
   }
 }
 
-.highlight {
+.example {
   margin-bottom: $default-whitespace;
   padding: 1em;
   background-color: #fff;
@@ -112,45 +116,19 @@ blockquote {
     margin-bottom: 0;
     border-radius: 6px 6px 0 0;
   }
-
-  & + pre[class*="language-"] {
-    margin-top: 0;
-    border-top: 0;
-    border-radius: 0 0 6px 6px;
-  }
 }
 
-pre[class*="language-"] {
-  position: relative;
+.highlight {
+  padding: $condensed-whitespace $default-whitespace;
   margin-bottom: $default-whitespace !important;
   border: 1px solid $default-border-color;
   border-radius: 6px;
+  background-color: #f5f2f0;
 
-  &:after {
-    content: "code";
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    font-family: $sans-serif-font;
-    font-size: rem(12);
-    color: #999;
-    background: #fff;
-    border: 1px solid $default-border-color;
-    border-top: 0;
-    border-right: 0;
-    border-radius: 0 0 0 6px;
+  pre {
+    margin: 0;
   }
 }
-
-@each $code-type in css, scss, markup, javascript {
-  pre[class*="#{$code-type}"] {
-    &:after {
-      content: "#{$code-type}";
-    }
-  }
-} 
 
 .table--demo {
   margin-bottom: 0;
