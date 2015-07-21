@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include doc_head.html %}
+
+  <body>
+      
+    {% include header.html %}
+
+    <main class="main" role="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            {% include nav.html %}
+          </div>
+          <div class="l-doc-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>
