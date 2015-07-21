@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Layout Styles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prism/themes/prism.css">
+</head>
+
+  <body>
+    <header role="banner">
+  <div class="l-container">
+    <div class="row">
+      <div class="col-6">
+        <a class="logo__mark" href="index.html">D-I Baseline</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="main" role="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            <nav role="navigation">
+  <ul class="nav nav-doc">
+    <li><a href="base.html">Base</a></li>
+    <li><a href="layout.html">Layout</a></li>
+    <li><a href="modules.html">Modules</a></li>
+    <li><a href="state.html">State</a></li>
+    <li><a href="code.html">Code</a></li>
+  </ul>
+</nav>
+
+          </div>
+          <div class="l-doc-content">
+            
+
+<h1 class="primary-headline">Layout Styles</h1>
+
+<p>These are styles that drive the layout of the site. They are based on a 12 column grid with a width of <code class="code">960px</code>.</p>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">The Grid</h2>
+
+  <h3 class="tertiary-headline">Details</h3>
+
+  <ul>
+    <li>Columns <code class="code">col-*</code> must be wrapped in a container with a class of <code class="code">row</code></li>
+    <li>Use rows to create horizontal groups of columns.</li>
+    <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+    <li>Predefined grid classes like <code class="code">.row</code> and <code class="code">.col-*</code> are available for quickly making grid layouts.</li>
+  </ul>
+
+  <h3 class="tertiary-headline">Example</h3>
+
+  <div class="grid-demo">
+    <div class="row">
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+    </div>
+    <div class="row">
+      <div class="col-12">col-12</div>
+    </div>
+    <div class="row">
+      <div class="col-1">col-1</div>
+      <div class="col-11">col-11</div>
+    </div>
+    <div class="row">
+      <div class="col-2">col-2</div>
+      <div class="col-10">col-10</div>
+    </div>
+    <div class="row">
+      <div class="col-3">col-3</div>
+      <div class="col-9">col-9</div>
+    </div>
+    <div class="row">
+      <div class="col-4">col-4</div>
+      <div class="col-8">col-8</div>
+    </div>
+    <div class="row">
+      <div class="col-5">col-5</div>
+      <div class="col-7">col-7</div>
+    </div>
+    <div class="row">
+      <div class="col-6">col-6</div>
+      <div class="col-6">col-6</div>
+    </div>
+    <div class="row">
+      <div class="col-2">col-2</div>
+      <div class="col-4">col-4</div>
+      <div class="col-2">col-2</div>
+      <div class="col-4">col-4</div>
+    </div>
+  </div>
+
+  <h3 class="tertiary-headline">Code Sample</h3>
+
+<pre><code class="language-markup">&lt;div class="row"&gt;
+  &lt;div class="col-2"&gt;...&lt;/div&gt;
+  &lt;div class="col-4"&gt;...&lt;/div&gt;
+  &lt;div class="col-2"&gt;...&lt;/div&gt;
+  &lt;div class="col-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h3 class="tertiary-headline">Grid Offsets</h3>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+  <div class="l-container">
+  </div>
+</footer>
+<script src="prism/prism.js"></script>
+<script src="prism/components/prism-scss.js"></script>
+
+  </body>
+</html>

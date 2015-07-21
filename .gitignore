@@ -1,2 +1,9 @@
+.DS_Store
 .sass-cache
 *.css.map
+_site
+logs
+.swp
+tmp
+*.sublime-project
+*.sublime-workspace

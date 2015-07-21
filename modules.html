@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Module Styles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prism/themes/prism.css">
+</head>
+
+  <body>
+    <header role="banner">
+  <div class="l-container">
+    <div class="row">
+      <div class="col-6">
+        <a class="logo__mark" href="index.html">D-I Baseline</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="main" role="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            <nav role="navigation">
+  <ul class="nav nav-doc">
+    <li><a href="base.html">Base</a></li>
+    <li><a href="layout.html">Layout</a></li>
+    <li><a href="modules.html">Modules</a></li>
+    <li><a href="state.html">State</a></li>
+    <li><a href="code.html">Code</a></li>
+  </ul>
+</nav>
+
+          </div>
+          <div class="l-doc-content">
+            
+
+<h1 class="primary-headline">Module Styles</h1>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Buttons</h2>
+
+  <div class="highlight highlight--flush">
+    <span class="button mbl">Standard Button</span>
+    <span class="button button--full">Full Width Button</span>
+  </div>
+
+<pre><code class="language-markup">&lt;span class="button"&gt;Standard Button&lt;/span&gt;
+&lt;span class="button button--full"&gt;Full Width Button&lt;/span&gt;
+</code></pre>
+
+  <div class="highlight highlight--flush">
+    <span class="button">Standard Button</span>
+    <span class="button-pseudo">Pseudo Button</span>
+  </div>
+
+<pre><code class="language-markup">&lt;span class="button"&gt;Standard Button&lt;/span&gt;
+&lt;span class="button-pseudo"&gt;Pseudo Button&lt;/span&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Flex Media</h2>
+  <p>Responsive styles for embedded media.</p>
+
+  <h3 class="tertiary-headline">16x9 Aspect Ratio</h3>
+
+  <div class="highlight highlight--flush">
+    <div class="embed embed--16by9">
+      <div class="embed__item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-9NMt42il4Q" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="embed embed--16by9"&gt;
+  &lt;div class="embed__item"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+  <h3 class="tertiary-headline">4x3 Aspect Ratio</h3>
+
+  <div class="highlight highlight--flush">
+    <div class="embed embed--4by3">
+      <div class="embed__item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-9NMt42il4Q" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="embed embed--4by3"&gt;
+  &lt;div class="embed__item"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Forms</h2>
+
+  <h3 class="tertiary-headline">Horizontal Form</h3>
+
+  <div class="highlight highlight--flush">
+    <div class="form-horizontal">
+      <label for="test-form-1">Name</label>
+      <input type="text" name="test-form-1" id="test-form-1">
+      <select id="test-form-2" name="test-form-2" id="test-form-2">
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+        <option value="option-3">Option 3</option>
+        <option value="option-4">Option 4</option>
+      </select>
+      <button class="button" type="submit">Submit</button>
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="form-horizontal"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+
+  <h3 class="tertiary-headline">Vertical Form</h3>
+
+  <div class="highlight highlight--flush">
+    <div class="form-vertical">
+      <label for="test-form-1">Name</label>
+      <input type="text" name="test-form-1" id="test-form-1">
+      <select id="test-form-2" name="test-form-2" id="test-form-2">
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+        <option value="option-3">Option 3</option>
+        <option value="option-4">Option 4</option>
+      </select>
+      <button class="button" type="submit">Submit</button>
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="form-vertical"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Lists</h2>
+
+  <h3 class="tertiary-headline">Plain List</h3>
+
+  <div class="highlight highlight--flush">
+    <ul class="list-plain mbn">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+
+<pre><code class="language-markup">&lt;ul class="list-plain"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+  <h3 class="tertiary-headline">Horizontal List</h3>
+
+  <div class="highlight highlight--flush">
+    <ul class="list-horizontal mbn">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+
+<pre><code class="language-markup">&lt;ul class="list-horizontal"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Media Object</h2>
+
+  <h3 class="tertiary-headline">Standard Media Object</h3>
+
+  <div class="highlight highlight--flush">
+    <div class="media">
+      <div class="media__obj">
+        <img src="http://placehold.it/50x50" alt="">
+      </div>
+      <div class="media__body">
+        Consectetur delectus nesciunt blanditiis error similique fugit est aspernatur. Impedit facere aliquid quaerat libero sapiente animi provident est repudiandae earum. Voluptatum harum voluptate voluptates fuga nostrum magnam odio? Cum laborum.
+      </div>
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="media"&gt;
+  &lt;div class="media__obj"&gt;&lt;img src="..." alt=""&gt;&lt;/div&gt;
+  &lt;div class="media__body"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+  <h3 class="tertiary-headline">Reversed Media Object</h3>
+
+  <div class="highlight highlight--flush">
+    <div class="media">
+      <div class="media__obj--rev">
+        <img src="http://placehold.it/50x50" alt="">
+      </div>
+      <div class="media__body">
+        Consectetur delectus nesciunt blanditiis error similique fugit est aspernatur. Impedit facere aliquid quaerat libero sapiente animi provident est repudiandae earum. Voluptatum harum voluptate voluptates fuga nostrum magnam odio? Cum laborum.
+      </div>
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="media"&gt;
+  &lt;div class="media__obj--rev"&gt;&lt;img src="..." alt=""&gt;&lt;/div&gt;
+  &lt;div class="media__body"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Notifications</h2>
+
+  <div class="highlight highlight--flush">
+    <div class="notification">
+      Default Notification
+    </div>
+
+    <div class="notification notification--alert">
+      Alert Notification
+    </div>
+
+    <div class="notification notification--warning">
+      Alert Warning
+    </div>
+
+    <div class="notification notification--success">
+      Success Notification
+    </div>
+
+    <div class="notification notification--notice">
+      Information Notification
+    </div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="notification"&gt;...&lt;/div&gt;
+&lt;div class="notification notification--alert"&gt;...&lt;/div&gt;
+&lt;div class="notification notification--warning"&gt;...&lt;/div&gt;
+&lt;div class="notification notification--success"&gt;...&lt;/div&gt;
+&lt;div class="notification notification--notice"&gt;...&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="doc-section">
+  <h2 class="secondary-headline doc-headline">Table Styles</h2>
+
+  <h3 class="tertiary-headline">Standard Table</h3>
+
+  <div class="highlight highlight--flush">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brad</td>
+          <td>Dielman</td>
+          <td>@bdielman</td>
+        </tr>
+        <tr>
+          <td>Branden</td>
+          <td>Wiegand</td>
+          <td>@brandenwiegand</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Fiorini</td>
+          <td>@joefiorini</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<pre><code class="language-markup">&lt;table class="table"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+
+  <h3 class="tertiary-headline">Striped Table</h3>
+
+  <div class="highlight highlight--flush">
+    <table class="table table--striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brad</td>
+          <td>Dielman</td>
+          <td>@bdielman</td>
+        </tr>
+        <tr>
+          <td>Branden</td>
+          <td>Wiegand</td>
+          <td>@brandenwiegand</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Fiorini</td>
+          <td>@joefiorini</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<pre><code class="language-markup">&lt;table class="table table--striped"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+
+  <h3 class="tertiary-headline">Hover Table</h3>
+
+  <div class="highlight highlight--flush">
+    <table class="table table--hover">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brad</td>
+          <td>Dielman</td>
+          <td>@bdielman</td>
+        </tr>
+        <tr>
+          <td>Branden</td>
+          <td>Wiegand</td>
+          <td>@brandenwiegand</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Fiorini</td>
+          <td>@joefiorini</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<pre><code class="language-markup">&lt;table class="table table--hover"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+  <div class="l-container">
+  </div>
+</footer>
+<script src="prism/prism.js"></script>
+<script src="prism/components/prism-scss.js"></script>
+
+  </body>
+</html>
