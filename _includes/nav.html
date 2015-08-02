@@ -1,9 +1,7 @@
-<nav role="navigation">
-  <ul class="nav nav-doc">
-    <li><a href="base.html">Base</a></li>
-    <li><a href="layout.html">Layout</a></li>
-    <li><a href="modules.html">Modules</a></li>
-    <li><a href="state.html">State</a></li>
-    <li><a href="code.html">Code</a></li>
-  </ul>
+<nav role="navigation" class="nav nav-doc">
+  <a{% if page.section == 'base' %} class="active"{% endif %} href="base.html">Base</a>
+  <a{% if page.section == 'layout' %} class="active"{% endif %} href="layout.html">Layout</a>
+  <a{% if page.section == 'modules' %} class="active"{% endif %} href="modules.html">Modules</a>
+  <a{% if page.section == 'state' %} class="active"{% endif %} href="state.html">State</a>
+  <a{% if page.section == 'code' %} class="active"{% endif %} href="code.html">Code</a>
 </nav>

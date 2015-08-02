@@ -63,8 +63,69 @@ section: base
 <div class="txt-right">...</div>
 <div class="txt-justify">...</div>
 {% endhighlight %}
+
+  <h3 class="tertiary-headline">Surgical Classes</h3>
+  <p>These surgical classes will add padding or margins to elements.</p>
+  <div class="example">
+    <table class="table table--demo">
+      <tbody>
+        <tr>
+          <td><code class="code">p</code></td>
+          <td>Apply padding to the element.</td>
+        </tr>
+        <tr>
+          <td><code class="code">m</code></td>
+          <td>Apply margin to the element.</td>
+        </tr>
+        <tr>
+          <td><code class="code">a</code></td>
+          <td>Apply padding or margins to all sides.</td>
+        </tr>
+        <tr>
+          <td><code class="code">v</code></td>
+          <td>Apply padding or margins to top and bottom of the element.</td>
+        </tr>
+        <tr>
+          <td><code class="code">h</code></td>
+          <td>Apply padding or margins to the right and left sides of the element.</td>
+        </tr>
+        <tr>
+          <td><code class="code">t, r, b, l</code></td>
+          <td>Apply padding or margins to top, right, bottom, or left sides respectively.</td>
+        </tr>
+        <tr>
+          <td><code class="code">s, m, l</code></td>
+          <td>Choose either small, medium, or large sizes for the padding and margins.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+{% highlight html %}
+<!-- Applies a large margin to all sides of an element -->
+<div class="mal">...</div>
+<!-- Applies medium padding to the vertical sides of an element -->
+<div class="pvm">...</div>
+{% endhighlight %}
 </div>
 
 <div class="doc-section">
-  <h3 class="tertiary-headline">Surgical Classes</h3>
+  <h2 class="secondary-headline doc-headline">Helpers</h2>
+
+  <h3 class="tertiary-head">Text Helpers</h3>
+  <div class="example">
+    <div style="width: 200px">
+      <p><strong>Truncate text:</strong></p>
+      <p class="txt-truncate">Adipisicing eligendi quod beatae perferendis dolorem? Rerum laboriosam qui quibusdam animi possimus rerum.</p>
+    </div>
+    <div style="width: 200px">
+      <p><strong>Break text:</strong></p>
+      <a href="#" class="txt-break">Adipisicingeligendiquodbeataeperferendisdolorem?Rerumlaboriosamquiquibusdamanimipossimusrerum.</a>
+    </div>
+  </div>
+
+{% highlight html %}
+<p class="txt-truncate">...</p>
+<a href="#" class="txt-break">...</a>
+{% endhighlight %}
 </div>
