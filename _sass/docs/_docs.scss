@@ -2,7 +2,7 @@
 // ------------------
 
 $default-bg-color: #f5f2f0;
-$doc-link-color: #218aa3;
+$doc-link-color: #9f2b33;
 
 code, kbd, pre, samp {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
@@ -73,16 +73,13 @@ blockquote {
 }
 
 .doc-headline {
-  @include hidpi(2) {
-    background-image: $encoded-bookmarks-retina;
-    background-size: 12px 20px;
-  }
   margin-top: 40px;
   margin-left: -25px;
   padding-left: 25px;
-  background-image: $encoded-bookmarks;
+  background-image: url("/images/bookmark.svg");
   background-position: 0 5px;
   background-repeat: no-repeat;
+  background-size: 12px 20px;
 
   @media only screen and (max-width: em(820)) {
     margin-left: 0;
@@ -95,14 +92,10 @@ blockquote {
     margin: 40px 0 20px;
     padding-bottom: 24.384236453%;
     text-indent: -9999em;
-    background-image: $encoded-logo;
+    background-image: url("/images/logo-baseline.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
-
-    @include hidpi(2) {
-      background-image: $encoded-logo-retina;
-    }
   }
 }
 
