@@ -30,6 +30,14 @@ a {
   }
 }
 
+[role="banner"] {
+  padding: 40px 0;
+
+  .l-container {
+    border-bottom: 1px solid $doc-brand-color;
+  }
+}
+
 blockquote {
   margin-left: 0;
   padding: 0 15px;
@@ -116,15 +124,29 @@ blockquote {
 .logo {
   &__mark {
     display: block;
-    margin: 40px 0 50px;
-    padding-left: 64px;
+    height: 40px;
+    width: 158px;
+    text-indent: -9999em;
+    background-image: url("images/logo-refinery.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__type {
+    margin: 10px 0 20px;
+    display: block;
     font-family: 'Audimat3000-Mi-gras', $helvetica;
     font-size: rem(64);
     text-transform: uppercase;
     text-decoration: none;
-    background-image: url("images/logo-baseline.svg");
-    background-position: left center;
-    background-repeat: no-repeat;
+    line-height: 1;
+    color: #00244c;
+
+    &:hover,
+    &:focus {
+      color: darken(#00244c, 10%);
+    }
   }
 }
 
