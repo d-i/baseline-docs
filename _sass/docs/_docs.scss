@@ -1,8 +1,20 @@
 // CUSTOM DOCS STYLES
 // ------------------
 
+@font-face {
+  font-family: 'Audimat3000-Regulier';
+  src: url('fonts/2F676B_6_0.woff2') format('woff2'),
+       url('fonts/2F676B_6_0.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Audimat3000-Mi-gras';
+  src: url('fonts/2F676B_2_0.woff2') format('woff2'),
+       url('fonts/2F676B_2_0.woff') format('woff');
+}
+
 $default-bg-color: #f5f2f0;
-$doc-link-color: #9f2b33;
+$doc-brand-color: #9f2b33;
 
 code, kbd, pre, samp {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
@@ -10,11 +22,11 @@ code, kbd, pre, samp {
 }
 
 a {
-  color: $doc-link-color;
+  color: $doc-brand-color;
 
   &:hover,
   &:focus {
-    color: darken($doc-link-color, 10%);
+    color: darken($doc-brand-color, 10%);
   }
 }
 
@@ -59,6 +71,10 @@ blockquote {
 
 .primary-headline {
   line-height: 1;
+  font-family: 'Audimat3000-Regulier', $helvetica;
+  font-weight: 400;
+  font-size: rem(36);
+  color: $doc-brand-color;
 }
 
 .doc-section {
@@ -76,6 +92,10 @@ blockquote {
   margin-top: 40px;
   margin-left: -25px;
   padding-left: 25px;
+  font-family: 'Audimat3000-Regulier', $helvetica;
+  font-weight: 400;
+  font-size: rem(30);
+  color: $doc-brand-color;
   background-image: url("images/bookmark.svg");
   background-position: 0 5px;
   background-repeat: no-repeat;
@@ -86,16 +106,25 @@ blockquote {
   }
 }
 
+.tertiary-headline {
+  font-family: 'Audimat3000-Regulier', $helvetica;
+  font-weight: 400;
+  font-size: rem(22);
+  color: $doc-brand-color;
+}
+
 .logo {
   &__mark {
     display: block;
-    margin: 40px 0 20px;
-    padding-bottom: 24.384236453%;
-    text-indent: -9999em;
+    margin: 40px 0 50px;
+    padding-left: 64px;
+    font-family: 'Audimat3000-Mi-gras', $helvetica;
+    font-size: rem(64);
+    text-transform: uppercase;
+    text-decoration: none;
     background-image: url("images/logo-baseline.svg");
-    background-position: 0 0;
+    background-position: left center;
     background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -166,12 +195,12 @@ blockquote {
     &:hover,
     &:focus {
       color: #fff;
-      background-color: tint($doc-link-color, 20%);
+      background-color: tint($doc-brand-color, 20%);
     }
 
     &.active {
       color: #fff;
-      background-color: $doc-link-color;
+      background-color: $doc-brand-color;
     }
 
     &:first-child {
