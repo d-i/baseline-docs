@@ -110,6 +110,10 @@ blockquote {
   background-repeat: no-repeat;
   background-size: 12px 20px;
 
+  a {
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: em(820)) {
     margin-left: 0;
   }
