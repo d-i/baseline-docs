@@ -77,11 +77,12 @@ blockquote {
   margin-bottom: ($default-whitespace * 2);
 }
 
-.primary-headline {
+.primary-docs-headline {
+  margin-top: 0;
   line-height: 1;
   font-family: 'Audimat3000-Regulier', $helvetica;
   font-weight: 400;
-  font-size: rem(36);
+  font-size: rem(40);
   color: $doc-brand-color;
 }
 
@@ -112,13 +113,6 @@ blockquote {
   @media only screen and (max-width: em(820)) {
     margin-left: 0;
   }
-}
-
-.tertiary-headline {
-  font-family: 'Audimat3000-Regulier', $helvetica;
-  font-weight: 400;
-  font-size: rem(22);
-  color: $doc-brand-color;
 }
 
 .logo {
