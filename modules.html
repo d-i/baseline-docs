@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Docs</title>
+    <!-- Favicons-->
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/docs.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header role="banner">
+      <div class="l-container">
+        <div class="row">
+          <div class="col-6"><a href="http://the-refinery.io" class="logo__mark">The Refinery</a><a href="index.html" class="logo__type">Baseline</a></div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            <!-- Nav-->
+            <nav role="navigation" class="nav nav-doc"><a href="base.html">Base</a><a href="layout.html">Layout</a><a href="modules.html" class="active">Modules</a><a href="state.html">State</a><a href="code.html">Code</a></nav>
+          </div>
+          <div class="l-doc-content">
+            <div class="l-section">
+              <h1 class="primary-docs-headline">Module Styles</h1>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Buttons</h2>
+                <div class="highlight"><span class="button mbs">Standard Button</span><span class="button button--full">Full Width Button</span></div>
+                <pre><code class="language-html">&lt;span class=&quot;button&quot;&gt;Standard Button&lt;/span&gt;
+&lt;span class=&quot;button button--full&quot;&gt;Full Width Button&lt;/span&gt;
+</code></pre>
+                <div class="highlight"><span class="button">Standard Button</span><span class="button-pseudo">Pseudo Button</span></div>
+                <pre><code class="language-html">&lt;span class=&quot;button&quot;&gt;Standard Button&lt;/span&gt;
+&lt;span class=&quot;button-pseudo&quot;&gt;Pseudo Button&lt;/span&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Flex Media</h2>
+                <p>Responsive styles for embedded media.</p>
+                <h3 class="tertiary-headline">16x9 Aspect Ratio</h3>
+                <div class="highlight">
+                  <div class="embed embed--16by9">
+                    <div class="embed__item">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-9NMt42il4Q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;embed embed--16by9&quot;&gt;
+  &lt;div class=&quot;embed__item&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                <h3 class="tertiary-headline">4x3 Aspect Ratio</h3>
+                <div class="highlight">
+                  <div class="embed embed--4by3">
+                    <div class="embed__item">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-9NMt42il4Q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;embed embed--4by3&quot;&gt;
+  &lt;div class=&quot;embed__item&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Forms</h2>
+                <h3 class="tertiary-headline">Horizontal Form</h3>
+                <div class="highlight">
+                  <div class="form-horizontal">
+                    <label for="test-form-1">Name</label>
+                    <input type="text" name="test-form-1" id="test-form-1">
+                    <select id="test-form-2" name="test-form-2">
+                      <option value="option-1">Option 1</option>
+                      <option value="option-2">Option 2</option>
+                      <option value="option-3">Option 3</option>
+                      <option value="option-4">Option 4</option>
+                    </select>
+                    <button type="submit" class="button">Submit</button>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;form-horizontal&quot;&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Vertical Form</h3>
+                <div class="highlight">
+                  <div class="form-vertical">
+                    <label for="test-form-1">Name</label>
+                    <input type="text" name="test-form-1" id="test-form-1">
+                    <select id="test-form-2" name="test-form-2">
+                      <option value="option-1">Option 1</option>
+                      <option value="option-2">Option 2</option>
+                      <option value="option-3">Option 3</option>
+                      <option value="option-4">Option 4</option>
+                    </select>
+                    <button type="submit" class="button">Submit</button>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;form-vertical&quot;&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Lists</h2>
+                <h3 class="tertiary-headline">Plain List</h3>
+                <div class="highlight">
+                  <ul class="list-plain mbn">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ul>
+                </div>
+                <pre><code class="language-html">&lt;ul class=&quot;list-plain&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Horizontal List</h3>
+                <div class="highlight">
+                  <ul class="list-horizontal mbn">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ul>
+                </div>
+                <pre><code class="language-html">&lt;ul class=&quot;list-horizontal&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Media Object</h2>
+                <h3 class="tertiary-headline">Standard Media Object</h3>
+                <div class="highlight">
+                  <div class="media">
+                    <div class="media__obj"><img src="http://placehold.it/50x50" alt=""></div>
+                    <div class="media__body">Consectetur delectus nesciunt blanditiis error similique fugit est aspernatur. Impedit facere aliquid quaerat libero sapiente animi provident est repudiandae earum. Voluptatum harum voluptate voluptates fuga nostrum magnam odio? Cum laborum.</div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media__obj&quot;&gt;&lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;media__body&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Reversed Media Object</h3>
+                <div class="highlight">
+                  <div class="media">
+                    <div class="media__obj--rev"><img src="http://placehold.it/50x50" alt=""></div>
+                    <div class="media__body">Consectetur delectus nesciunt blanditiis error similique fugit est aspernatur. Impedit facere aliquid quaerat libero sapiente animi provident est repudiandae earum. Voluptatum harum voluptate voluptates fuga nostrum magnam odio? Cum laborum.</div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media__obj--rev&quot;&gt;&lt;img src=&quot;...&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;media__body&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Notifications</h2>
+                <div class="highlight">
+                  <div class="notification">Default Notification</div>
+                  <div class="notification notification--alert">Alert Notification</div>
+                  <div class="notification notification--warning">Alert Warning</div>
+                  <div class="notification notification--success">Success Notification</div>
+                  <div class="notification notification--notice mbn">Information Notification</div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;notification&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;notification notification--alert&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;notification notification--warning&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;notification notification--success&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;notification notification--notice&quot;&gt;...&lt;/div&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Table Styles</h2>
+                <h3 class="tertiary-headline">Standard Table</h3>
+                <div class="highlight">
+                  <table class="table mbn">
+                    <thead>
+                      <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Brad</td>
+                        <td>Dielman</td>
+                        <td>@bdielman</td>
+                      </tr>
+                      <tr>
+                        <td>Branden</td>
+                        <td>Wiegand</td>
+                        <td>@brandenwiegand</td>
+                      </tr>
+                      <tr>
+                        <td>Josh</td>
+                        <td>Walsh</td>
+                        <td>@joshwalsh</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Striped Table</h3>
+                <div class="highlight">
+                  <table class="table table--striped mbn">
+                    <thead>
+                      <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Brad</td>
+                        <td>Dielman</td>
+                        <td>@bdielman</td>
+                      </tr>
+                      <tr>
+                        <td>Branden</td>
+                        <td>Wiegand</td>
+                        <td>@brandenwiegand</td>
+                      </tr>
+                      <tr>
+                        <td>Josh</td>
+                        <td>Walsh</td>
+                        <td>@joshwalsh</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre><code class="language-html">&lt;table class=&quot;table table--striped&quot;&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Hover Table</h3>
+                <div class="highlight">
+                  <table class="table table--hover mbn">
+                    <thead>
+                      <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Brad</td>
+                        <td>Dielman</td>
+                        <td>@bdielman</td>
+                      </tr>
+                      <tr>
+                        <td>Branden</td>
+                        <td>Wiegand</td>
+                        <td>@brandenwiegand</td>
+                      </tr>
+                      <tr>
+                        <td>Josh</td>
+                        <td>Walsh</td>
+                        <td>@joshwalsh</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre><code class="language-html">&lt;table class=&quot;table table--hover&quot;&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Tiles</h2>
+                <h3 class="tertiary-headline">Standard Tiles</h3>
+                <div class="highlight">
+                  <div class="tile-container">
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;tile-container&quot;&gt;
+  &lt;div class=&quot;tile__item&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Three Column Tiles</h3>
+                <div class="highlight">
+                  <div class="tile-container tile-container--three">
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;tile-container tile-container--three&quot;&gt;
+  &lt;div class=&quot;tile__item&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                <h3 class="tertiary-headline">Four Column Tiles</h3>
+                <div class="highlight">
+                  <div class="tile-container tile-container--four">
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                    <div class="tile__item">
+                      <p>Adipisicing amet iusto earum cumque incidunt. Deserunt blanditiis animi nisi ut asperiores. Molestias iusto aperiam cumque id minima hic voluptatum voluptas. Eos minima distinctio cupiditate nobis tempore. Illum porro esse.</p>
+                    </div>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;tile-container tile-container--four&quot;&gt;
+  &lt;div class=&quot;tile__item&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- include partials/_footer-->
+    <script src="/application.js"></script>
+  </body>
+</html>

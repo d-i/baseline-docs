@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Docs</title>
+    <!-- Favicons-->
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/docs.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header role="banner">
+      <div class="l-container">
+        <div class="row">
+          <div class="col-6"><a href="http://the-refinery.io" class="logo__mark">The Refinery</a><a href="index.html" class="logo__type">Baseline</a></div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            <!-- Nav-->
+            <nav role="navigation" class="nav nav-doc"><a href="base.html">Base</a><a href="layout.html">Layout</a><a href="modules.html">Modules</a><a href="state.html" class="active">State</a><a href="code.html">Code</a></nav>
+          </div>
+          <div class="l-doc-content">
+            <div class="l-section">
+              <h1 class="primary-docs-headline">State Styles</h1>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Display States</h2>
+                <div class="highlight">
+                  <table class="table table--demo">
+                    <tbody>
+                      <tr>
+                        <td> <code class="code">.is-hidden</code></td>
+                        <td>Hide from browsers and screen readers.</td>
+                      </tr>
+                      <tr>
+                        <td> <code class="code">.is-hidden-visually</code></td>
+                        <td>Hide from browsers, but let screen readers access the content.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">.is-invisible</code></td>
+                        <td>Hide from browsers, but don't remove from document flow.</td>
+                      </tr>
+                      <tr>
+                        <td> <code class="code">.is-visible </code></td>
+                        <td>Use to toggle the <code class="code">.is-invisible</code> state above.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- include partials/_footer-->
+    <script src="/application.js"></script>
+  </body>
+</html>

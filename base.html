@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Docs</title>
+    <!-- Favicons-->
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/docs.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header role="banner">
+      <div class="l-container">
+        <div class="row">
+          <div class="col-6"><a href="http://the-refinery.io" class="logo__mark">The Refinery</a><a href="index.html" class="logo__type">Baseline</a></div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            <!-- Nav-->
+            <nav role="navigation" class="nav nav-doc"><a href="base.html" class="active">Base</a><a href="layout.html">Layout</a><a href="modules.html">Modules</a><a href="state.html">State</a><a href="code.html">Code</a></nav>
+          </div>
+          <div class="l-doc-content">
+            <div class="l-section">
+              <h1 class="primary-docs-headline">Base Styles</h1>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Content Styles</h2>
+                <h3 class="tertiary-headline">Headlines</h3>
+                <div class="highlight">
+                  <table class="table table--demo">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h1 class="primary-headline">Primary Headline</h1>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h2 class="secondary-headline">Secondary Headline</h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h3 class="tertiary-headline">Tertiary Headline</h3>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre><code class="language-html">&lt;h1 class=&quot;primary-headline&quot;&gt;...&lt;/h1&gt;
+&lt;h2 class=&quot;secondary-headline&quot;&gt;...&lt;/h2&gt;
+&lt;h3 class=&quot;tertiary-headline&quot;&gt;...&lt;/h3&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Utilities</h2>
+                <h3 class="tertiary-headline">Text Utilities</h3>
+                <div class="highlight">
+                  <table class="table table--demo">
+                    <tbody>
+                      <tr>
+                        <td class="txt-left">Left aligned text</td>
+                      </tr>
+                      <tr>
+                        <td class="txt-center">Center aligned text</td>
+                      </tr>
+                      <tr>
+                        <td class="txt-right">Right aligned text</td>
+                      </tr>
+                      <tr>
+                        <td class="txt-justify"><strong>Justified text</strong>Adipisicing maiores illum tempore quaerat perferendis, suscipit vel! Expedita quos nemo nihil similique laudantium doloribus. Vitae at inventore in eaque provident rem eum. Vero sapiente facere libero totam omnis totam.</td>
+                      </tr>
+                      <tr>
+                        <td class="r-txt-right"> Responsive right aligned text <small><em class="txt-alert">Converts to left aligned for small screens</em></small>.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;txt-left&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;txt-center&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;txt-right&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;txt-justify&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;r-txt-right&quot;&gt;...&lt;/div&gt;
+
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h3 class="tertiary-headline">Surgical Classes</h3>
+                <p>These surgical classes will add padding or margins to elements.</p>
+                <div class="highlight">
+                  <table class="table table--demo">
+                    <tbody>
+                      <tr>
+                        <td><code class="code">p</code></td>
+                        <td>Apply padding to the element.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">m</code></td>
+                        <td>Apply margin to the element.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">a</code></td>
+                        <td>Apply padding or margins to all sides.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">v</code></td>
+                        <td>Apply padding or margins to top and bottom of the element.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">h</code></td>
+                        <td>Apply padding or margins to the right and left sides of the element.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">t, r, b, l</code></td>
+                        <td>Apply padding or margins to top, right, bottom, or left sides respectively.</td>
+                      </tr>
+                      <tr>
+                        <td><code class="code">s, m, l</code></td>
+                        <td>Choose either small, medium, or large sizes for the padding and margins.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre><code class="language-html">&lt;!-- Applies a large margin to all sides of an element --&gt;
+&lt;div class=&quot;mal&quot;&gt;...&lt;/div&gt;
+&lt;!-- Applies medium padding to the vertical sides of an element --&gt;
+&lt;div class=&quot;pvm&quot;&gt;...&lt;/div&gt;
+</code></pre>
+              </div>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">Helpers</h2>
+                <div class="highlight">
+                  <div style="width: 200px">
+                    <p><strong>Truncate Text</strong></p>
+                    <p class="txt-truncate">Amet at eveniet repellat beatae corporis nihil? Ad voluptate perspiciatis voluptas alias numquam sapiente soluta molestiae dignissimos. Tenetur temporibus architecto autem quidem quo quas fugiat! Ratione adipisci atque asperiores autem!</p>
+                  </div>
+                  <div style="width: 200px">
+                    <p><strong>Break Text</strong></p><a class="txt-break">Amet at eveniet repellat beatae corporis nihil? Ad voluptate perspiciatis voluptas alias numquam sapiente soluta molestiae dignissimos. Tenetur temporibus architecto autem quidem quo quas fugiat! Ratione adipisci atque asperiores autem!</a>
+                  </div>
+                </div>
+                <pre><code class="language-html">&lt;p class=&quot;txt-truncate&quot;&gt;...&lt;/p&gt;
+&lt;a href=&quot;&#35;&quot; class=&quot;txt-break&quot;&gt;...&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- include partials/_footer-->
+    <script src="/application.js"></script>
+  </body>
+</html>

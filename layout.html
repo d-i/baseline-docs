@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Docs</title>
+    <!-- Favicons-->
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/docs.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header role="banner">
+      <div class="l-container">
+        <div class="row">
+          <div class="col-6"><a href="http://the-refinery.io" class="logo__mark">The Refinery</a><a href="index.html" class="logo__type">Baseline</a></div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+      <div class="l-container">
+        <div class="row">
+          <div class="l-doc-nav">
+            <!-- Nav-->
+            <nav role="navigation" class="nav nav-doc"><a href="base.html">Base</a><a href="layout.html" class="active">Layout</a><a href="modules.html">Modules</a><a href="state.html">State</a><a href="code.html">Code</a></nav>
+          </div>
+          <div class="l-doc-content">
+            <div class="l-section">
+              <h1 class="primary-docs-headline">Layout Styles</h1>
+              <p>These are styles that drive the layout of the site. They are based on a 12 column grid with a width of <code class="code">960px</code>.</p>
+              <div class="doc-section">
+                <h2 class="secondary-headline doc-headline">The Grid</h2>
+                <h3 class="tertiary-headline">Details</h3>
+                <ul>
+                  <li>Columns <code class="code">col-*</code> must be wrapped in a container with a class of <code class="code">row</code>.</li>
+                  <li>Use rows to create horizontal groups of columns.</li>
+                  <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+                  <li>Predefined grid classes like <code class="code">.row</code> and <code class="code">.col-*</code> are available for quickly making grid layouts.</li>
+                </ul>
+                <h3 class="tertiary-headline">Example</h3>
+                <div class="grid-demo">
+                  <div class="row">
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                    <div class="col-1">col-1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">col-12</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1">col-1</div>
+                    <div class="col-11">col-11</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">col-2</div>
+                    <div class="col-10">col-10</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">col-3</div>
+                    <div class="col-9">col-9</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">col-4</div>
+                    <div class="col-8">col-8</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">col-5</div>
+                    <div class="col-7">col-7</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">col-6</div>
+                    <div class="col-6">col-6</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">col-2</div>
+                    <div class="col-4">col-4</div>
+                    <div class="col-2">col-2</div>
+                    <div class="col-4">col-4</div>
+                  </div>
+                </div>
+                <h3 class="tertiary-headline">Code Sample</h3>
+                <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+            <div class="doc-section">
+              <h3 class="tertiary-headline">Grid Offsets</h3>
+              <p>Use the offset for the grids to offset a column from the edge the container, or to increase the spacing between columns in the layout.</p>
+              <div class="grid-demo">
+                <div class="row">
+                  <div class="col-9 push-3">col-9 push-3</div>
+                </div>
+                <div class="row">
+                  <div class="col-3">col-3</div>
+                  <div class="col-3 push-6">col3 push-6</div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-9 push-3&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-3 push-6&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- include partials/_footer-->
+    <script src="/application.js"></script>
+  </body>
+</html>
