@@ -149,8 +149,8 @@ pre[class*="language-"] {
 }
 
 @font-face {
-  font-family: 'Audimat3000-Regulier';
-  src: url("fonts/2F676B_6_0.woff2") format("woff2"), url("fonts/2F676B_6_0.woff") format("woff");
+  font-family: 'Audimat3000-Gras';
+  src: url("fonts/2F676B_0_0.woff2") format("woff2"), url("fonts/2F676B_0_0.woff") format("woff");
 }
 
 @font-face {
@@ -164,11 +164,11 @@ code, kbd, samp {
 }
 
 a {
-  color: #9f2b33;
+  color: #af222a;
 }
 
 a:hover, a:focus {
-  color: #772026;
+  color: #841a20;
 }
 
 [role="banner"] {
@@ -176,7 +176,7 @@ a:hover, a:focus {
 }
 
 [role="banner"] .l-container {
-  border-bottom: 1px solid #9f2b33;
+  border-bottom: 1px solid #af222a;
 }
 
 blockquote {
@@ -225,10 +225,10 @@ blockquote {
 .primary-docs-headline {
   margin-top: 0;
   line-height: 1;
-  font-family: "Audimat3000-Regulier", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 2.5em;
-  color: #9f2b33;
+  font-family: "Audimat3000-Gras", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #00244c;
 }
 
 .doc-section {
@@ -246,12 +246,12 @@ blockquote {
   margin-top: 40px;
   margin-left: -25px;
   padding-left: 25px;
-  font-family: "Audimat3000-Regulier", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 1.875em;
-  color: #9f2b33;
+  font-family: "Audimat3000-Mi-gras", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #ed2f48;
   background-image: url("images/bookmark.svg");
-  background-position: 0 5px;
+  background-position: 0 1px;
   background-repeat: no-repeat;
   background-size: 12px 20px;
 }
@@ -280,7 +280,7 @@ blockquote {
 .logo__type {
   margin: 20px 0;
   display: block;
-  font-family: "Audimat3000-Mi-gras", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Audimat3000-Gras", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 4em;
   text-transform: uppercase;
   text-decoration: none;
@@ -384,12 +384,12 @@ pre[class*="javascript"]:after {
 
 .nav-doc a:hover, .nav-doc a:focus {
   color: #fff;
-  background-color: #b2555c;
+  background-color: #bf4e55;
 }
 
 .nav-doc a.active {
   color: #fff;
-  background-color: #9f2b33;
+  background-color: #af222a;
 }
 
 .nav-doc a:first-child {
