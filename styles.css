@@ -1106,25 +1106,25 @@ embed {
 .notification--alert {
   color: #a94442;
   background-color: #f2e3e3;
-  border-color: shade(#a94442, 20%);
+  border-color: #873635;
 }
 
 .notification--warning {
   color: #b29115;
   background-color: #f3efdc;
-  border-color: shade(#b29115, 20%);
+  border-color: #8e7411;
 }
 
 .notification--success {
   color: #3c763d;
   background-color: #e2eae2;
-  border-color: shade(#3c763d, 20%);
+  border-color: #305e31;
 }
 
 .notification--notice {
   color: #31708f;
   background-color: #e0eaee;
-  border-color: shade(#31708f, 20%);
+  border-color: #275a72;
 }
 
 .table {
@@ -1203,13 +1203,13 @@ embed {
 
 @media screen and (min-width: 43.75em) {
   .tile-container--three .tile__item {
-    width: 33.33%;
+    width: 33.33333%;
   }
 }
 
 @media screen and (min-width: 43.75em) {
   .tile-container--four .tile__item {
-    width: 33.33%;
+    width: 33.33333%;
   }
 }
 
