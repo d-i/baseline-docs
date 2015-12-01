@@ -1,2 +1,2 @@
 # baseline-docs
-Documentation for D-I Baseline
+Documentation for Baseline
