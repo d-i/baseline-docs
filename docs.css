@@ -258,6 +258,11 @@ blockquote {
 
 .doc-headline a {
   text-decoration: none;
+  color: #ed2f48;
+}
+
+.doc-headline a:hover, .doc-headline a:focus {
+  color: #d6132c;
 }
 
 @media only screen and (max-width: 51.25em) {
