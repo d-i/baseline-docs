@@ -617,7 +617,7 @@ embed {
 
 .l-container {
   margin: 0 auto;
-  max-width: 60em;
+  max-width: em(960px);
   width: 90%;
 }
 
@@ -1166,7 +1166,7 @@ embed {
 
 .table th,
 .table td {
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .table th {
