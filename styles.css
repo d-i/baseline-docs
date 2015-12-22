@@ -617,7 +617,7 @@ embed {
 
 .l-container {
   margin: 0 auto;
-  max-width: em(960px);
+  max-width: 60em;
   width: 90%;
 }
 
