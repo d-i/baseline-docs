@@ -617,7 +617,7 @@ embed {
 
 .l-container {
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 60rem;
   width: 90%;
 }
 
@@ -874,7 +874,6 @@ embed {
 
 .button {
   display: inline-block;
-  position: relative;
   margin: 0;
   padding: 8px 12px;
   cursor: pointer;
@@ -892,6 +891,8 @@ embed {
   border: 1px solid #ccc;
   border-radius: 3px;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .button:hover, .button:focus {
